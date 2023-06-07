@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  mysql:
+    container_name: sqlstore
+    image: ${DOCKER_REGISTRY-}mysql
+    ports:
+     - '3307:3306'
+    environment: 
+        MYSQL_ROOT_PASSWORD: 'Password123!'
+        MYSQL_ROOT_HOST: '%'
+        MYSQL_USER: 'admin'
+        MYSQL_PASSWORD: 'Password123!'
+networks:
+  default:
+   external: 
+    name: online_learning_platform
