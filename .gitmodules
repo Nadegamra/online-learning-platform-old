@@ -1,9 +1,9 @@
 [submodule "Frontend/frontend_spa"]
 	path = Frontend/frontend_spa
 	url = git@github.com:Nadegamra/olp-frontend-spa.git
-[submodule "Services/Authentication"]
-	path = Services/Authentication
+[submodule "Backend/Services/Authentication"]
+	path = Backend/Services/Authentication
 	url = git@github.com:Nadegamra/microservices-authentication.git
-[submodule "Services/CourseManagement"]
-	path = Services/CourseManagement
+[submodule "Backend/Services/CourseManagement"]
+	path = Backend/Services/CourseManagement
 	url = git@github.com:Nadegamra/microservices-course_management.git
