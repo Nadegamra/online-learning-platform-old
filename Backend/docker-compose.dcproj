@@ -9,6 +9,7 @@
     <DockerServiceName>authentication</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="auth_dev.env" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
