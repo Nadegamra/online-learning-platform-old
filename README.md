@@ -34,4 +34,5 @@ An example platform for creating and taking online courses
 - Get a Google Drive API Service Account json key, rename it to `key.json` and place inside the `./Backend/Services/CourseManagement/` directory
 - Execute `docker-compose up` from `./Backend` directory
 ### Frontend
+#### Instructions
 - Execute `docker-compose up` from `./Frontend` directory
