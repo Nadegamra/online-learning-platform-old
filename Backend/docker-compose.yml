@@ -4,7 +4,8 @@ name: backend
 services:
   authentication:
     container_name: authentication
-    image: ${DOCKER_REGISTRY-}authentication
+    image: ${DOCKER_REGISTRY-}authentication:dev
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Services/Authentication/Dockerfile
@@ -12,8 +13,9 @@ services:
        - mysql
        - rabbitmq
   coursemanagement:
-    image: ${DOCKER_REGISTRY-}coursemanagement
+    image: ${DOCKER_REGISTRY-}coursemanagement:dev
     container_name: course_management
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Services/CourseManagement/Dockerfile
@@ -23,6 +25,7 @@ services:
   mysql:
     container_name: sqlstore
     image: ${DOCKER_REGISTRY-}mysql
+    restart: unless-stopped
     ports:
      - '3307:3306'
     volumes:
@@ -36,6 +39,7 @@ services:
     container_name: bunny
     hostname: bunny
     image: rabbitmq:3.12.0-management-alpine
+    restart: unless-stopped
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
     ports:

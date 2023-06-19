@@ -6,14 +6,10 @@ services:
 
         Database__ConnectionString: "server=sqlstore; port=3306; user=root; password=Password123!; database=authentication"
         
-        Smtp__EmailAddress: 'karolis.zukaus@gmail.com'
-        Smtp__EmailPassword: 'awtzbvzuypjgjlec'
-        Smtp__TestEmail:  'karolis.zukaus@gmail.com'
-        
         IP__Address: 'localhost'
         IP__Port: '44396'
 
-        JwtSecret: 'Key+F0rTOk&n+Sig=1n6'
+        JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
         EventBus__SubscriptionClientName: "CourseManagement"
         EventBus__HostName: "bunny"
@@ -21,7 +17,8 @@ services:
         EventBus__UserName: "authentication"
         EventBus__Password: "Password123!"
         EventBus__RetryCount: "5"
-
+    env_file:
+      - auth_dev.env
     ports:
       - "44395:80"
       - "44396:443"
@@ -39,7 +36,7 @@ services:
       IP__Address: 'localhost'
       IP__Port: '44398'
 
-      JwtSecret: 'Key+F0rTOk&n+Sig=1n6'
+      JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
       EventBus__SubscriptionClientName: "Authentication"
       EventBus__HostName: "bunny"
@@ -47,7 +44,6 @@ services:
       EventBus__UserName: "course_management"
       EventBus__Password: "Password123!"
       EventBus__RetryCount: "5"
-
     ports:
       - "44397:80"
       - "44398:443"
