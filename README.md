@@ -1,5 +1,5 @@
 # online-learning-platform (WIP)
-A platform for creating and taking online courses
+An example platform for creating and taking online courses
 ## Tech stack
 - .NET7
 - React
