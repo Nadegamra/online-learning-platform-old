@@ -1,7 +1,6 @@
 FROM rabbitmq:3.12.0-management-alpine
 
-COPY rabbitmq_init.sh /init.sh
+COPY rabbitmq_init.sh /rabbitmq_init.sh
+RUN chmod +x /rabbitmq_init.sh
 
-RUN chmod +x /init.sh
-
-ENTRYPOINT ["/init.sh"]
+ENTRYPOINT ["/rabbitmq_init.sh"]
