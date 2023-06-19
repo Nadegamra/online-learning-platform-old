@@ -32,6 +32,7 @@ An example platform for creating and taking online courses
   - Smtp__EmailPass (If you are using gmail, you should generate an App Password, but this could differ according to email provider)
   - Smtp__TestEmail (Used for testing. Email to which all mail is redirected, leave empty to turn off this functionality)
 - Get a Google Drive API Service Account json key, rename it to `key.json` and place inside the `./Backend/Services/CourseManagement/` directory
+- Execute `dotnet ef database update` in `./Backend/Services/Authentication` and `./Backend/Services/CourseManagement`
 - Execute `docker-compose up` from `./Backend` directory
 ### Frontend
 #### Instructions
