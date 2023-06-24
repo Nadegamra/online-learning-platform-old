@@ -1,0 +1,11 @@
+{
+    "dotnet.defaultSolution": "Backend.sln",
+    "json.schemas": [
+        {
+          "fileMatch": [
+            "/Services/CourseManagement/RouteConfig.json"
+          ],
+          "url": "/Infrastructure/Routes/RouteConfigSchema.json"
+        }
+      ]
+}
