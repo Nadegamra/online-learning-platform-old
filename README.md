@@ -9,11 +9,11 @@ An example platform for creating and taking online courses
 ## Current platform status
 | Functionality                  | API           | [Frontend]      |
 | ------------------------------ |:-------------:| :--------------:|
-| [Authentication]               | In Progress   | In progress     |
-| [Course Management]            | In Progress   |  -              |
-| Course Content Management      | -             |  -              |
-| Course Participation           | -             |  -              |
-| Test Taking                    | -             |  -              |
+| [Authentication]               | ⏳            | ⏳             |
+| [Course Management]            | ⏳            | ❌             |
+| Course Content Management      | ❌            | ❌             |
+| Course Participation           | ❌            | ❌             |
+| Test Taking                    | ❌            | ❌             |
 
 [Authentication]: https://github.com/Nadegamra/microservices-authentication
 [Course Management]: https://github.com/Nadegamra/microservices-course_management
