@@ -9,8 +9,8 @@ An example platform for creating and taking online courses
 ## Current platform status
 | Functionality                  | API           | [Frontend]      |
 | ------------------------------ |:-------------:| :--------------:|
-| [Authentication]               | ⏳            | ⏳             |
-| [Course Management]            | ⏳            | ❌             |
+| [Authentication]               | ✅            | ✅             |
+| [Course Management]            | ⏳            | ⏳             |
 | Course Content Management      | ❌            | ❌             |
 | Course Participation           | ❌            | ❌             |
 | Test Taking                    | ❌            | ❌             |
