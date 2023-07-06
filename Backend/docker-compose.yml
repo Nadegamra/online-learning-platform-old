@@ -16,6 +16,7 @@ services:
       - .:/src
       - /src/Services/Authentication/obj/
       - /sr/Services/Authentication/bin/
+      - /home/karolis/.certs:/certs
     working_dir: /src/Services/Authentication
   coursemanagement:
     image: ${DOCKER_REGISTRY-}coursemanagement:dev
@@ -31,6 +32,7 @@ services:
       - .:/src
       - /src/Services/CourseManagement/obj/
       - /sr/Services/CourseManagement/bin/
+      - /home/karolis/.certs:/certs
     working_dir: /src/Services/CourseManagement
   mysql:
     container_name: sqlstore
@@ -61,7 +63,6 @@ services:
 networks:
   default:
     name: online_learning_platform
-    external: true
 volumes:
   mysql_data:
   rabbitmq_data:

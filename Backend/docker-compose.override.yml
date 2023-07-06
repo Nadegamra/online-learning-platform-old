@@ -17,15 +17,15 @@ services:
         EventBus__UserName: "authentication"
         EventBus__Password: "Password123!"
         EventBus__RetryCount: "5"
+
+        ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+        ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+
     env_file:
       - auth_dev.env
     ports:
       - "44395:80"
       - "44396:443"
-    volumes:
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-  
   coursemanagement:
     environment:
       ASPNETCORE_ENVIRONMENT: 'Development'
@@ -44,9 +44,10 @@ services:
       EventBus__UserName: "course_management"
       EventBus__Password: "Password123!"
       EventBus__RetryCount: "5"
+
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+
     ports:
       - "44397:80"
       - "44398:443"
-    volumes:
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
