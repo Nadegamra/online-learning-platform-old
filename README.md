@@ -7,10 +7,10 @@ An example platform for creating and taking online courses
 - RabbitMQ
 - Docker
 ## Current platform status
-| Functionality                  | API           | [Frontend]      |
-| ------------------------------ |:-------------:| :--------------:|
+| Functionality                  | API           | [Frontend]     |
+| ------------------------------ |:-------------:| :-------------:|
 | [Authentication]               | ✅            | ✅             |
-| [Course Management]            | ⏳            | ⏳             |
+| [Course Management]            | ✅            | ⏳             |
 | Course Content Management      | ❌            | ❌             |
 | Course Participation           | ❌            | ❌             |
 | Test Taking                    | ❌            | ❌             |
