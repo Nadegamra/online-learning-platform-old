@@ -7,7 +7,7 @@ services:
         Database__ConnectionString: "server=sqlstore; port=3306; user=root; password=Password123!; database=authentication"
         
         IP__Address: 'localhost'
-        IP__Port: '44396'
+        IP__Port: '3000'
 
         JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
@@ -34,7 +34,7 @@ services:
       Database__ConnectionString: "server=sqlstore; port=3306; user=root; password=Password123!; database=course_management"
 
       IP__Address: 'localhost'
-      IP__Port: '44398'
+      IP__Port: '3000'
 
       JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
